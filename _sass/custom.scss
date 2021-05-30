@@ -27,8 +27,20 @@ body {
   }
 }
 
+.footnote-return {
+  svg path {
+    fill: #2a7ae2;
+  }
+}
+
 article {
   overflow: hidden;
+
+  sup {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: .7em;
+    padding: 0 .25em;
+  }
 
   p {
     line-height: 165%;
