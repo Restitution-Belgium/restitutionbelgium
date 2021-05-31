@@ -289,6 +289,34 @@ article {
   width: calc(100% - 30px);
 }
 
+
+#cookie-notice {
+  background: #222;
+  bottom: 0;
+  color: rgba(255,255,255,0.8);
+  display: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  text-align: center;
+  width: calc(100% - 2rem);
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 0.5rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+    #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+    #cookie-notice a {position: relative; bottom: 4px;}
+}
+
 @media all and (max-width: 800px) {
   .table-of-contents {
     margin-left: -15px;
