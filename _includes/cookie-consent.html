@@ -24,7 +24,10 @@
     }
 
     if(readCookie('cookie-notice-dismissed')=='true') {
-        <!-- Cookies -->
+        const script = document.createElement('script');
+        script.src = 'https://platform-api.sharethis.com/js/sharethis.js#property=60b562fc858dc10011cdb706&product=inline-share-buttons';
+        script.async = 'async';
+        document.head.appendChild(script);
     } else {
         document.getElementById('cookie-notice').style.display = 'block';
     }
