@@ -9,6 +9,14 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.site-title {
+  font-weight: 500;
+}
+
+.footer-heading {
+  font-weight: 500;
+}
+
 .page-header {
   font: {
     family: 'IBM Plex Sans Condensed', sans-serif;
@@ -209,12 +217,59 @@ article {
   }
 }
 
+.press-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    font-size: 1.1em;
+    line-height: 140%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    display: block;
+    font-weight: 500;
+    
+    a {
+      color: #111;
+      text-decoration: underline;
+    }
+  }
+  
+  .metadata {
+    color: #999;
+    display: block;
+    font: {
+      family: 'IBM Plex Sans', sans-serif;
+      size: .8em;
+    }
+  }
+  
+  .publication {
+    color: #333;
+  }
+}
+
 .button-block {
   align-items: center;
   display: flex;
   justify-content: center;
   margin: 2rem 0 4rem 0;
-
+  
+  &.homepage-button-block {
+    border: {
+      color: #efefef;
+      style: solid;
+      width: 1px 0 0 0;
+    }
+    margin: 4rem auto;
+    max-width: 1080px;
+    padding: 2rem 0;
+    width: calc(100% - 30px);
+  }
+  
   a {
     background-color: none;
     border: 2px #111 solid;
@@ -259,6 +314,7 @@ article {
     font: {
       family: 'IBM Plex Sans', sans-serif;
       size: 1.3rem;
+      weight: 500;
     }
 
     a {
